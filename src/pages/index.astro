@@ -1,0 +1,666 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+
+import Tracks from "../components/Tracks.astro";
+import Why from "../components/Why.astro";
+import Partners from "../components/Partnersimg.svelte";
+
+
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+    <Navbarbottom client:load></Navbarbottom>
+
+    <div class="main-content">
+
+			<!-- Banner Start -->
+			<div id="rs-banner" class="rs-banner banner-style1">
+			    <div class="container">
+			    	<div class="row y-middle">
+			    		<div class="col-lg-6">
+			    			<div class="content-wrap">
+			    				<h2 class="title white-color pb-10">
+			    					RINK
+                                    Research Innovation Network Kerala
+			    				</h2>
+			    				<div class=" text-white">
+			    				    <p class="text-2xl font-bold">
+										Translating Innovations, Transforming Economy
+			    				 	</p>  
+			    				</div>
+								
+			    				<div class="banner-btn mt-10">
+			    					<a class="readon blue-btn" href="#about">Discover More</a>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		  <!-- Counter Start -->
+						<div class="col-lg-6">
+							<div class="rs-counter counter-style1  py-24">
+								<div class="container">
+									<div class="row y-middle">
+										
+										<div class="">
+											<div class="row">
+												<div class="col-xl-6 col-md-6 col-sm-6 mb-30">
+													<div class="rs-counter-list"> 
+														<div class="count-text">
+															<div class="count-number">
+																<span class="rs-count">1000</span>
+																<span class="prefix">+</span>	
+															</div>
+															<span class=" text-white">Researchers</span>	
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-6 col-md-6 col-sm-6 xs-mb-30">
+													<div class="rs-counter-list"> 
+														<div class="count-text">
+															<div class="count-number">
+																<span class="rs-count">250</span>
+																<span class="prefix">+</span>	
+															</div>
+															<span class="text-white">Commerciable technologies</span>	
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-6 col-md-6 col-sm-6 mb-30">
+													<div class="rs-counter-list"> 
+														<div class="count-text">
+															<div class="count-number">
+																<span class="rs-count">100</span>
+																<span class="prefix">+</span>	
+															</div>
+															<span class="text-white">Research & Academic Institutions</span>	
+														</div>
+													</div>
+												</div>
+												
+												<div class="col-xl-6 col-md-6 col-sm-6">
+													<div class="rs-counter-list"> 
+														<div class="count-text">
+															<div class="count-number">
+																<span class="rs-count">150</span>
+																<span class="prefix">+</span>	
+															</div>
+															<span class="text-white">Lakh fund for research & Innovation</span>	
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+			<!-- Counter End -->
+			    	</div>
+			    </div>
+			</div>
+			<!-- Banner End -->
+
+			<!-- About Start -->
+			<div class="rs-about about-style2 pt-120 pb-150 md-pt-80 md-pb-80 hidden" >
+				<div class="container">
+					<div class="row y-middle">
+						<div class="col-lg-6 md-mb-50">
+							<div class="widget-img">
+								<img src="assets/images/about/style3/about-6.png" alt="About">
+								<div class="multi-img wow fadeinup">
+									<img src="assets/images/about/style3/shape-1.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 pl-70 md-pl-15">
+							<div class=" mb-45 md-mb-25">
+								<!-- <span class=" text-blue-900 text-2xl font-bold">RINK</span> -->
+								
+								<p class=" text-bse pt-4 text-justify text-wrap heebo">
+                                    Over time, Kerala has established a scientific infrastructure comprising dedicated institutions and a skilled scientific workforce.<br><br> The Research Innovation Network (RINK) seeks to unite Research Institutions, Startups, Investors, Industry, and Government agencies into a common platform thereby providing an opportunity to take cutting edge research outcomes into the commercial space.<br><br> Leveraging Kerala's research potential, RINK will offer an interdisciplinary workspace for research institutions across diverse industrial sectors.
+                                </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <section class="flex flex-col py-24 container" id="about">
+                <div class="grid md:grid-cols-2  md:gap-10 grid-cols-1 h-auto">
+                    <div>
+                        <div class="h-full">
+							<!-- <img src="/img/2150062204.jpg" class="rounded-2xl"> -->
+							<div class="rs-videos orange-videos relative cursor-pointer">
+								<img src="/img/2150062204.jpg" 
+									
+									class="rounded-md w-full">
+								<div class=" absolute inset-0 flex items-center justify-center">
+									<div class="animate-border">
+		                                <a class="popup-border popup-videos" href="https://www.youtube.com/watch?v=qo_bis6qThg">
+		                                    <i class="fa fa-play"></i>
+		                                </a>
+		                            </div>    
+								</div>
+							</div>
+
+							
+							<!-- <div class="bg-center bg-no-repeat h-full w-full mb-4" style="background-image:url('/img/rink1.svg')"></div> -->
+						</div>
+                    </div>
+                    <div class=" fonr-light">
+                        <p class=" text-lg pt-6">Over time, Kerala has established a scientific infrastructure comprising dedicated institutions and a skilled scientific workforce.</p>
+                        <p class="py-4 text-lg">The Research Innovation Network (RINK) seeks to unite Research Institutions, Startups, Investors, Industry, and Government agencies into a common platform thereby providing an opportunity to take cutting edge research outcomes into the commercial space.</p>
+	                    <p class=" text-lg">Leveraging Kerala's research potential, RINK will offer an interdisciplinary workspace for research institutions across diverse industrial sectors.</p>
+                    </div>
+                </div>
+            </section>
+			<!-- About End -->
+
+
+            <!-- Choose Start -->
+			<div class="rs-choose choose-style4 choose-modify1  md-pt-80 md-pb-80" id="Objectives">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 md-mb-50">
+							<div class="rs-choose-content">
+								
+								<div class="sec-title  mb-55 md-mb-35 flex flex-row items-center ">
+									
+									<h2 class="title">
+										Objectives
+									</h2>
+								</div>
+
+								<div class="rs-addon-services mb-38 ">
+									<div class="services-icon flex flex-col items-center justify-center">
+										<img src="assets/images/choose/style2/icons/1.png" alt="Icons" class=" items-center justify-center">
+									</div>
+									<div class="services-text items-center justify-center flex flex-col">
+                                        <p class="items-center justify-center text-lg">Mold a culture of entrepreneurship among researchers.</h4>
+									</div>
+								</div>
+								<div class="rs-addon-services mb-38 ">
+									<div class="services-icon flex flex-col items-center justify-center">
+										<img src="assets/images/choose/style2/icons/1.png" alt="Icons" class=" items-center justify-center">
+									</div>
+									<div class="services-text items-center justify-center flex flex-col">
+                                        <p class="items-center justify-center text-lg">
+                                            Facilitate collaborative partnership between Research Community and Industry.
+                                        </p>
+									</div>
+								</div>
+								<div class="rs-addon-services mb-38 ">
+									<div class="services-icon flex flex-col items-center justify-center">
+										<img src="assets/images/choose/style2/icons/1.png" alt="Icons" class=" items-center justify-center">
+									</div>
+									<div class="services-text items-center justify-center flex flex-col">
+                                    <p class="items-center justify-center text-lg">
+                                        Promote Translational/Impactful Research.                                        
+                                    </p>
+									</div>
+								</div>
+                                <div class="rs-addon-services mb-38 ">
+									<div class="services-icon flex flex-col items-center justify-center">
+										<img src="assets/images/choose/style2/icons/1.png" alt="Icons" class=" items-center justify-center">
+									</div>
+									<div class="services-text items-center justify-center flex flex-col">
+                                    <p class="items-center justify-center text-lg">
+                                    Encourage synergy between Startups & Researchers and explore the chances of co development.
+                                    </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<img src="/img/bgvideo.svg" class=" md:p-20 p-4">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Choose End -->
+
+
+			<!-- Services Start -->
+			<div class="rs-services services-style6  pt-24 hidden" >
+				<div class="container">
+                    <div class="sec-title mb-45">
+                        <p class=" text-4xl font-bold text-blue-900">
+                                Programs
+                        </p>
+                    </div>
+					<div class="row">
+						<div class="col-lg-4 col-md-6 mb-20">
+							<div class="services-item">
+								<div class="services-img">
+									<a href="services-style1.html">
+										<img src="assets/images/services/style6/service-1.jpg" alt="Services">
+									</a>
+								</div>
+								<div class="services-content">
+									<p class="text-xl items-center justify-center text-lgfont-bold"> <a href="Incubation">Incubation Programs</a></p>
+									<!-- <p class="services-txt">Structured incubation programs guiding researchers and scientists from idea validation to commercialization with mentorship, funding, and support.</p> -->
+									<div class="services-btn btn-style3 mt-4">
+										<a class="btn-text" href="Incubation">Know More<i class="fi fi-rr-arrow-small-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 mb-20">
+							<div class="services-item">
+								<div class="services-img">
+									<a href="services-style1.html">
+										<img src="assets/images/services/style6/service-2.jpg" alt="Services">
+									</a>
+								</div>
+								<div class="services-content">
+									<p class="text-xl items-center justify-center text-lgfont-bold"> <a href="services-style1.html">Technology Transfer</a></p>
+									<!-- <p class="services-txt">  Nor is there anyone who loves pursues bit desires to obtain pain of itself.</p> -->
+									<div class="services-btn btn-style3 mt-4">
+										<a class="btn-text" href="https://drive.google.com/drive/folders/1f8bB20T7f_tfko0ZrmfT3eDQQ8Ar9Jqs?usp=drive_link" target="_blank">Know More<i class="fi fi-rr-arrow-small-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 mb-20">
+							<div class="services-item">
+								<div class="services-img">
+									<a href="services-style1.html">
+										<img src="assets/images/services/style6/service-3.jpg" alt="Services">
+									</a>
+								</div>
+								<div class="services-content">
+									<p class="text-xl items-center justify-center text-lgfont-bold"> <a href="services-style1.html">Instrumentation</a></p>
+									<!-- <p class="services-txt">  Nor is there anyone who loves pursues bit desires to obtain pain of itself.</p> -->
+									<div class="services-btn btn-style3 mt-4">
+										<a class="btn-text" href="https://instruments.startupmission.in/" target="_blank">Know More<i class="fi fi-rr-arrow-small-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        
+
+                        <div class="col-lg-4 col-md-6 mb-20">
+							<div class="services-item">
+								<div class="services-img">
+									<a href="services-style1.html">
+										<img src="assets/images/services/style6/service-1.jpg" alt="Services">
+									</a>
+								</div>
+								<div class="services-content">
+									<p class="text-xl items-center justify-center text-lgfont-bold"> <a href="Demoday">Demo Day & Exposure Visits</a></p>
+									<!-- <p class="services-txt">Structured incubation programs guiding researchers and scientists from idea validation to commercialization with mentorship, funding, and support.</p> -->
+									<div class="services-btn btn-style3 mt-4">
+										<a class="btn-text" href="Demoday">Know More<i class="fi fi-rr-arrow-small-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <div class="col-lg-4 col-md-6 mb-20">
+							<div class="services-item">
+								<div class="services-img">
+									<a href="services-style1.html">
+										<img src="assets/images/services/style6/service-1.jpg" alt="Services">
+									</a>
+								</div>
+								<div class="services-content">
+									<p class="text-xl items-center justify-center text-lgfont-bold"> <a href="Support">IPR Support</a></p>
+									<!-- <p class="services-txt">Structured incubation programs guiding researchers and scientists from idea validation to commercialization with mentorship, funding, and support.</p> -->
+									<div class="services-btn btn-style3 mt-4">
+										<a class="btn-text" href="Support">Know More<i class="fi fi-rr-arrow-small-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <div class="col-lg-4 col-md-6 mb-20">
+							<div class="services-item">
+								<div class="services-img">
+									<a href="services-style1.html">
+										<img src="assets/images/services/style6/service-1.jpg" alt="Services">
+									</a>
+								</div>
+								<div class="services-content">
+									<p class="text-xl items-center justify-center text-lgfont-bold"> <a href="services-style1.html">Events</a></p>
+									<!-- <p class="services-txt">Structured incubation programs guiding researchers and scientists from idea validation to commercialization with mentorship, funding, and support.</p> -->
+									<div class="services-btn btn-style3 mt-4">
+										<a class="btn-text" href="services-style1.html">Know More<i class="fi fi-rr-arrow-small-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Services End -->
+
+
+	
+            <!-- Counter Start -->
+			<div class="rs-counter counter-style1 bg2 py-24 hidden">
+				<div class="container">
+					<div class="row y-middle">
+						<div class="col-lg-6 md-mb-50">
+							<div class="sec-title">
+								<span class="uppercase font-semibold  text-[#ffb703]">
+									<img src="assets/images/shape-1.png" alt="Images" class="pb-2">
+									RINK Community 
+								</span>
+								<h2 class="title white-color pb-10">
+									Where Researchers Become<br> Entrepreneurs!
+
+								</h2>
+								<p class="desc desc2 pb-45">
+                                    Join our dynamic ecosystem today and turn your research into impactful ventures. 
+								</p>
+								<div class="btn-part">
+									<a class="readon more contact" href="https://ksum.in/rinkregistration" target="_blank">Join Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="row">
+								<div class="col-xl-6 col-md-6 col-sm-6 mb-30">
+									<div class="rs-counter-list"> 
+									    <div class="count-text">
+									    	<div class="count-number">
+									    		<span class="rs-count">1000</span>
+									    		<span class="prefix">+</span>	
+									    	</div>
+									    	<span class="title">Researchers</span>	
+									    </div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-md-6 col-sm-6 mb-30">
+									<div class="rs-counter-list"> 
+									    <div class="count-text">
+									    	<div class="count-number">
+									    		<span class="rs-count">100</span>
+									    		<span class="prefix">+</span>	
+									    	</div>
+									    	<span class="title">Research & Academic Institutions</span>	
+									    </div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-md-6 col-sm-6 xs-mb-30">
+									<div class="rs-counter-list"> 
+									    <div class="count-text">
+									    	<div class="count-number">
+									    		<span class="rs-count">250</span>
+									    		<span class="prefix">+</span>	
+									    	</div>
+									    	<span class="title">Commerciable technologies</span>	
+									    </div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-md-6 col-sm-6">
+									<div class="rs-counter-list"> 
+									    <div class="count-text">
+									    	<div class="count-number">
+									    		<span class="rs-count">150</span>
+									    		<span class="prefix">+</span>	
+									    	</div>
+									    	<span class="title">Lakh fund for research & Innovation</span>	
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Counter End -->
+
+
+   
+
+
+				<!-- Services Section Start -->
+			<div class="rs-services services-main-home  pt-120 pb-120 md-pt-80 md-pb-80"  id="Programs">
+			    <div class="container">
+					<div class="sec-title text-center mb-55 md-mb-35">
+			    		
+			    		<h2 class="title">
+			    			Programs
+			    		</h2>
+			    	</div>
+			    	<div class="row">
+			    		<div class="col-xl-4 col-md-6 mb-30">
+			    			<div class="services-item">
+			    				<div class="services-wrap">
+			    					<div class="services-image">
+			    						<img src="/img/4.png" alt="Services">
+			    					</div>
+			    					<div class="services-content">
+			    						<div class="service-inner">
+			    							<!-- <div class="icon-top">
+			    								<img src="assets/images/services/main-home/main-icons/service-icon1.png" alt="Services">
+			    							</div> -->
+			    							<div class="services-titles">
+			    								<h3 class="title"><a href="/Incubation">Incubation Programs</a></h3>
+			    							</div>
+			    							<p class="services-txt">Structured incubation programs to support researchers, faculty, and scientists in transforming breakthrough ideas into scalable ventures. These programs offer a guided pathway from research validation to commercialization, backed by funding, expert mentorship, funding, and incubation support.</p>
+			    							<div class="services-btn">
+			    								<a class="btn-text" href="/Incubation">Read More</a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<div class="normarl-text-area">
+			    						<div class="services-titles">
+			    							<h3 class="title"><a href="/Incubation">Incubation Programs</a></h3>
+			    						</div>
+			    						<div class="icon-image">
+			    							<img src="assets/images/services/main-home/main-icons/service-icon1.png" alt="Services">
+			    						</div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-xl-4 col-md-6 mb-30">
+			    			<div class="services-item">
+			    				<div class="services-wrap">
+			    					<div class="services-image">
+			    						<img src="/img/7.png" alt="Services">
+			    					</div>
+			    					<div class="services-content">
+			    						<div class="service-inner">
+			    							<!-- <div class="icon-top">
+			    								<img src="assets/images/services/main-home/main-icons/service-icon2.png" alt="Services">
+			    							</div> -->
+			    							<div class="services-titles">
+			    								<h3 class="title"><a href="https://drive.google.com/drive/folders/1f8bB20T7f_tfko0ZrmfT3eDQQ8Ar9Jqs?usp=drive_link" target="_blank">Technology Booklet</a></h3>
+			    							</div>
+			    							<p class="services-txt">Discover a curated list of technologies developed across Kerala’s premier research institutions.  Whether you are looking for a market ready product, a scalable prototype, or a novel scientific solution, these technologies are available for licensing, co development, or commercialization.</p>
+			    							<div class="services-btn">
+			    								<a class="btn-text" href="https://drive.google.com/drive/folders/1f8bB20T7f_tfko0ZrmfT3eDQQ8Ar9Jqs?usp=drive_link" target="_blank">Read More</a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<div class="normarl-text-area">
+			    						<div class="services-titles">
+			    							<h3 class="title"><a href="https://drive.google.com/drive/folders/1f8bB20T7f_tfko0ZrmfT3eDQQ8Ar9Jqs?usp=drive_link" target="_blank">Technology Booklet</a></h3>
+			    						</div>
+			    						<div class="icon-image">
+			    							<img src="assets/images/services/main-home/main-icons/service-icon2.png" alt="Services">
+			    						</div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-xl-4 col-md-6 mb-30">
+			    			<div class="services-item">
+			    				<div class="services-wrap">
+			    					<div class="services-image">
+			    						<img src="/img/6.png" alt="Services">
+			    					</div>
+			    					<div class="services-content">
+			    						<div class="service-inner">
+			    							<div class="icon-top">
+			    								<img src="assets/images/services/main-home/main-icons/service-icon3.png" alt="Services">
+			    							</div>
+			    							<div class="services-titles">
+			    								<h3 class="title"><a href="https://instruments.startupmission.in/" target="_blank">Instrumentation</a></h3>
+			    							</div>
+			    							<p class="services-txt">Explore Instrumentation Facilities in Kerala</p>
+			    							<div class="services-btn">
+			    								<a class="btn-text" href="https://instruments.startupmission.in/" target="_blank">Read More</a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<div class="normarl-text-area">
+			    						<div class="services-titles">
+			    							<h3 class="title"><a href="https://instruments.startupmission.in/" target="_blank">Instrumentation</a></h3>
+			    						</div>
+			    						<div class="icon-image">
+			    							<img src="assets/images/services/main-home/main-icons/service-icon3.png" alt="Services">
+			    						</div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-xl-4 col-md-6 md-mb-30">
+			    			<div class="services-item">
+			    				<div class="services-wrap">
+			    					<div class="services-image">
+			    						<img src="/img/2.png" alt="Services">
+			    					</div>
+			    					<div class="services-content">
+			    						<div class="service-inner">
+			    							<!-- <div class="icon-top">
+			    								<img src="assets/images/services/main-home/main-icons/service-icon4.png" alt="Services">
+			    							</div> -->
+			    							<div class="services-titles">
+			    								<h3 class="title"><a href="/Demoday">Demo Day & Exposure Visits</a></h3>
+			    							</div>
+			    							<p class="services-txt">Events to connect startups to R&D institutions. Research institutions showcase commercial ready technologies, while startups and entrepreneurs get the chance to interact with scientists, explore advanced labs, and identify opportunities for collaboration, co development, or technology transfer</p>
+			    							<div class="services-btn">
+			    								<a class="btn-text" href="/Demoday">Read More</a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<div class="normarl-text-area">
+			    						<div class="services-titles">
+			    							<h3 class="title"><a href="/Demoday">Demo Day & Exposure Visits</a></h3>
+			    						</div>
+			    						<div class="icon-image">
+			    							<img src="assets/images/services/main-home/main-icons/service-icon4.png" alt="Services">
+			    						</div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-xl-4 col-md-6 sm-mb-30">
+			    			<div class="services-item">
+			    				<div class="services-wrap">
+			    					<div class="services-image">
+			    						<img src="/img/image61.png" alt="Services">
+			    					</div>
+			    					<div class="services-content">
+			    						<div class="service-inner">
+			    							<div class="icon-top">
+			    								<img src="assets/images/services/main-home/main-icons/service-icon5.png" alt="Services">
+			    							</div>
+			    							<div class="services-titles">
+			    								<h3 class="title"><a href="/Support">IPR Support</a></h3>
+			    							</div>
+			    							<!-- <p class="services-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus.</p> -->
+			    							<div class="services-btn">
+			    								<a class="btn-text" href="/Support">Read More</a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<div class="normarl-text-area">
+			    						<div class="services-titles">
+			    							<h3 class="title"><a href="/Support">IPR Support</a></h3>
+			    						</div>
+			    						<div class="icon-image">
+			    							<img src="assets/images/services/main-home/main-icons/service-icon5.png" alt="Services">
+			    						</div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="col-xl-4 col-md-6">
+			    			<div class="services-item">
+			    				<div class="services-wrap">
+			    					<div class="services-image">
+			    						<img src="/img/image69.png" alt="Services">
+			    					</div>
+			    					<div class="services-content">
+			    						<div class="service-inner">
+			    							<div class="icon-top">
+			    								<img src="assets/images/services/main-home/main-icons/service-icon6.png" alt="Services">
+			    							</div>
+			    							<div class="services-titles">
+			    								<h3 class="title"><a href="https://rinkevents.startupmission.in/demo-day" target="_blank">Events</a></h3>
+			    							</div>
+			    							<!-- <p class="services-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus.</p> -->
+			    							<div class="services-btn">
+			    								<a class="btn-text" href="https://rinkevents.startupmission.in/demo-day" target="_blank">Read More</a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<div class="normarl-text-area">
+			    						<div class="services-titles">
+			    							<h3 class="title"><a href="https://rinkevents.startupmission.in/demo-day" target="_blank">Events</a></h3>
+			    						</div>
+			    						<div class="icon-image">
+			    							<img src="assets/images/services/main-home/main-icons/service-icon6.png" alt="Services">
+			    						</div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+			<!-- Services Section End -->
+
+
+			<!-- Counter Start -->
+			<div class="rs-counter counter-style1 bg2 py-24">
+				<div class="container">
+				
+					<div class="row y-middle">
+						<div class="col-lg-6">
+							<div class="sec-title">
+								<span class="uppercase font-semibold  text-[#ffb703]">
+									<img src="assets/images/shape-1.png" alt="Images" class="pb-2">
+									RINK Community 
+								</span>
+								<h2 class="title white-color pb-10">
+									Where Researchers Become<br> Entrepreneurs!
+
+								</h2>
+								<p class="desc desc2 pb-45">
+                                    Join our dynamic ecosystem today and turn your research into impactful ventures. 
+								</p>
+								<div class="btn-part">
+									<a class="readon more contact" href="https://ksum.in/rinkregistration" target="_blank">Join Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<img src="/img/community.svg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Counter End -->
+
+
+			<section class="container py-24">
+				<div class="sec-title mb-45">
+					<p class=" text-4xl font-bold text-blue-900">
+						Partner Institutes
+					</p>
+				</div>
+				<Partners client:load></Partners>
+			</section>
+	
+		</div> 
+</Layout>

@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbarsub.svelte";
+
+import Tracks from "../components/Tracks.astro";
+import Galleryimg from "../components/Galleryimg.svelte";
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+    <Navbarbottom client:load></Navbarbottom>
+
+     <div class="rs-services services-main-home  pt-120 " >
+        <div class="container">
+            <div class="sec-title text-center">
+                <h2 class="title">
+                    Gallery
+                </h2>
+            </div>
+        </div>
+    </div>
+
+
+    <Galleryimg client:load></Galleryimg>
+
+</Layout>

@@ -1,0 +1,495 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+
+import Tracks from "../components/Tracks.astro";
+import Why from "../components/Why.astro";
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+<Navbarbottom client:load></Navbarbottom>
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+
+        <!-- start of static-hero-->
+        <section class="static-hero hidden">
+            <div class="container">
+                <div class="wraper">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12  fadeInUp" data--delay="0.0s">
+                            
+                            <div data-swiper-parallax="400" class=" pb-0 mb-0">
+                                <h2 class=" mb-0 text-8xl font-bold">KERA</h2>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold  pb-4">
+                                    Kerala Entrepreneurship & Renewable Agriculture
+                                </h1>
+                            </div>
+                            <div data-swiper-parallax="300" class="slide-title pt-0 text-sm">
+                                <span class="text-sm"> Empowering Farmers | Enabling Startups | Strengthening Rural Economies</span>
+                            </div>
+                            <div>
+                                <p class=" pt-4">
+                                    To make Kerala a model for sustainable, tech-enabled agriculture and rural entrepreneurship, where farmers, women, and youth benefit from innovation, markets, and inclusive economic growth.
+                                </p>
+                            </div>
+                           
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="hero-image">
+                                <img src="/img/2148905253 1.png" alt="">
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+          
+        </section>
+        <!-- end of static-hero-->
+
+        <div class="relative min-h-screen flex items-center justify-start px-10 text-white static-hero">
+            <div class="absolute inset-0 -z-10">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#143425] via-[#03502be7] to-[#02603378] z-10"></div>
+                <img src="/img/hero1.jpg" alt="Background" class="w-full h-full object-cover bg-top bg-right opacity-60" />
+            </div>
+            <div class="container  w-full h-full flex my-auto mx-auto">
+                <div class="">
+                    <div class="flex md:flex-row flex-col align-items-center w-full h-full md:gap-10 gap-6">
+                        <div class="md:w-1/2 w-full fadeInUp" data--delay="0.0s">
+                            
+                            <div data-swiper-parallax="400" class=" pb-0 mb-0">
+                                <h2 class="text-white mb-0 text-8xl font-bold">KERA</h2>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-white  pb-4">
+                                    Kerala Entrepreneurship & Renewable Agriculture
+                                </p>
+                            </div>
+                            <!-- <div data-swiper-parallax="300" class="slide-title pt-0 text-sm">
+                                <p class="text-xl text-white"> Empowering Farmers | Enabling Startups | Strengthening Rural Economies</p>
+                            </div> -->
+                            <div>
+                                <p class="text-white pt-4">
+                                    To make Kerala a model for sustainable, tech-enabled agriculture and rural entrepreneurship, where farmers, women, and youth benefit from innovation, markets, and inclusive economic growth.
+                                </p>
+                            </div>
+                           
+                        </div>
+                        <div class="md:w-1/2 w-full items-end justify-end flex">
+                            <img src="/img/1k.svg"  class=" border-2 border-white  rounded-full " alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        
+        </div>
+
+ <!-- Start features-->
+        <section class="features-section features-section-s2">
+            <div class="container">
+                <div class="wraper">
+                    <div class="row d-flex h-full">
+                        <div class="col col-lg-4 col-md-6 col-12 d-flex flex-col h-auto group">
+                             <a href="contact.html" target="_blank" class="h-full feature-card flex flex-col">
+                                <div class="content">
+                                    <h2>For<br>Startups</h2>
+                                    <p>Are you building a tech-driven agri solution?</p>
+                                    <div class="pt-2 flex gap-3 group-hover:text-black text-sm">
+                                        Apply for Startup Support
+                                        <img src="/img/arrow.png" class="w-6" alt="">
+                                    </div>
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <img src="assets/images/feature/2.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-lg-4 col-md-6 col-12 d-flex flex-col h-full group">
+                            <a href="contact.html" target="_blank" class="h-full feature-card flex flex-col">
+                                <div class="content">
+                                    <h2>For Farmers & FPOs</h2>
+                                    <p>Want to improve your productivity or market access?</p>
+                                    <div class="pt-2 flex gap-3 group-hover:text-black text-sm">
+                                        Join KERA Collectives
+                                        <img src="/img/arrow.png" class="w-6" alt="">
+                                    </div>
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <img src="assets/images/feature/2.svg" alt="">
+                                </div>
+                            </a>
+                        </div> 
+                        <div class="col col-lg-4 col-md-6 col-12 d-flex flex-col h-full group">
+                             <a href="contact.html" target="_blank" class="h-full feature-card flex flex-col">
+                                <div class="content">
+                                    <h2>For Partners & Institutions</h2>
+                                    <p>Interested in collaboration, funding, or research?</p>
+                                    <div class="pt-2 flex gap-3 group-hover:text-black text-sm">
+                                        Partner With Us
+                                        <img src="/img/arrow.png" class="w-6" alt="">
+                                    </div>
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <img src="assets/images/feature/2.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div data-swiper-parallax="300" class="slide-title pt-4  text-sm flex text-center w-full items-center justify-center">
+                        <p class="text-xl text-green-900 text-center"> Empowering Farmers | Enabling Startups | Strengthening Rural Economies</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end features-->
+
+      
+
+      
+
+
+
+        <!-- start about -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="flex md:flex-row md:gap-10 gap-5 flex-col">
+                    <div class="md:w-1/2 w-full">
+                        <img src="/img/kera12.svg" class="" alt="">
+                    </div>
+                    <div class="md:w-1/2 w-full   fadeInRight" data-wow-delay="0.1s">
+                        <div class="about-content">
+                            <!-- <h2>about</h2> -->
+                            <h3>KERA</h3>
+                            <p>
+                                The KERA Project is a flagship initiative by the Government of Kerala in collaboration with the World Bank, focused on transforming agriculture and rural livelihoods. It aims to create a vibrant, technology-driven ecosystem where farmers, startups, and agri-entrepreneurs thrive together.
+                                <br><br>
+                                At its heart, KERA promotes innovation, entrepreneurship, sustainability, and community development—bringing cutting-edge solutions to the grassroots.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape-1">
+                <img src="assets/images/about/shape1.svg" alt="">
+            </div>
+        </section>
+        <!-- end about -->
+
+
+        <section id="Mission" class="service-section py-24">
+            <div class="container mx-auto flex flex-col">
+                <div class="row pb-10">
+                    <div class="col-lg-8 col-12">
+                        <div class=" text-5xl font-extrabold">
+                            <h2>Objectives</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-3 lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 gap-4 h-auto">
+                    <div class="group flex flex-col h-full rounded-bl-2xl rounded-br-2xl" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">
+                        <div class="overflow-hidden image-anime">
+                            <img src="/img/o1.png" class="">
+                        </div>
+                        <div class="rounded-bl-2xl rounded-br-2xl py-4 px-4 text-lg  text-green-900 font-semibold text-center ">
+                            <h1 class="text-green-900">Modernize Kerala’s agricultural practices &nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                        </div>
+                    </div>
+
+                    <div class="group flex flex-col h-full " data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">
+                        <div class="overflow-hidden image-anime">
+                            <img src="/img/o2.svg" class="">
+                        </div>
+                        <div class="rounded-bl-2xl rounded-br-2xl py-4 px-4 text-lg  text-green-900 font-semibold text-center ">
+                            <h1 class="text-green-900">Promote farmer-producer collectives and cooperatives</h1>
+                        </div>
+                    </div>
+
+                    <div class="group flex flex-col h-full" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">
+                        <div class="overflow-hidden image-anime">
+                            <img src="/img/o3.svg" class="">
+                        </div>
+                        <div class="rounded-bl-2xl rounded-br-2xl py-4 px-4 text-lg  text-green-900 font-semibold text-center ">
+                            <h1 class="text-green-900">Support startups in solving real-world agri challenges</h1>
+                        </div>
+                    </div>
+
+                    <div class="group flex flex-col h-full" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">
+                        <div class="overflow-hidden image-anime">
+                            <img src="/img/o4.svg" class="">
+                        </div>
+                        <div class="rounded-bl-2xl rounded-br-2xl py-4 px-4 text-lg  text-green-900 font-semibold text-center ">
+                            <h1 class="text-green-900">Improve productivity, sustainability, and market access</h1>
+                        </div>
+                    </div>
+
+                    <div class="group flex flex-col h-full" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">
+                        <div class="overflow-hidden image-anime">
+                            <img src="/img/o5.svg" class="">
+                        </div>
+                        <div class="rounded-bl-2xl rounded-br-2xl py-4 px-4 text-lg  text-green-900 font-semibold text-center ">
+                            <h1 class="text-green-900">Enable women and youth to lead agri-entrepreneurship</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+      
+        <!-- start service -->
+        <section class="service-section pb-24 container">
+            <div class="">
+                <div class="row pb-10">
+                    <div class="col-lg-8 col-12">
+                        <div class="text-5xl font-extrabold">
+                            <h2>Key Components of KERA</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Tracks></Tracks>  
+        </section>
+        <!-- end service -->
+
+       
+
+
+        <section class="service-section pb-24 container hidden">
+            <div class="">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="text-5xl font-extrabold">
+                            <h2>Why KERA Stands Out</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" flex sm:flex-row flex-col gap-4 pt-6 items-center justify-center">
+                <div class="group md:w-1/4 sm:1/2 w-full items-center justify-center flex flex-col ">
+                    <div class=" overflow-hidden rounded-full w-56">
+                        <img src="/img/s1.svg" class="rounded-full w-56 group-hover:scale-125 duration-300 ">
+                    </div>
+                    <div>
+                        <p class="font-bold text-lg pt-4 text-black">Grassroots-Centered Design</p>
+                    </div>
+                </div>
+                 <div class="group md:w-1/4 sm:1/2 w-full items-center justify-center flex flex-col ">
+                    <div class=" overflow-hidden rounded-full w-56">
+                        <img src="/img/s2.svg" class="rounded-full w-56 group-hover:scale-125 duration-300 ">
+                    </div>
+                    <div>
+                        <p class="font-bold text-lg pt-4 text-black">Startup–Farmer Collaboration</p>
+                    </div>
+                </div>
+                 <div class="group md:w-1/4 sm:1/2 w-full items-center justify-center flex flex-col ">
+                    <div class=" overflow-hidden rounded-full w-56">
+                        <img src="/img/bg1.svg" class="rounded-full w-56 group-hover:scale-125 duration-300 ">
+                    </div>
+                    <div>
+                        <p class="font-bold text-lg pt-4 text-black text-center">Climate-Smart & Inclusive</p>
+                    </div>
+                </div>
+                 <div class="group md:w-1/4 sm:1/2 w-full items-center justify-center flex flex-col ">
+                    <div class=" overflow-hidden rounded-full w-56">
+                        <img src="/img/bg1.svg" class="rounded-full w-56 group-hover:scale-125 duration-300 ">
+                    </div>
+                    <div>
+                        <p class="font-bold text-lg pt-10 text-black text-center ">Backed by International Partnerships
+</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class=" px-5 container mx-auto">
+            <div class=" md:flex-row flex flex-col ">
+                <div class="md:w-1/2 w-full my-auto">
+                    <div class=" pb-10">
+                        <div class="row">
+                            <div class="">
+                                <div class="text-5xl font-extrabold">
+                                    <h2>Why KERA Stands Out</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div>
+                            
+                            <div class="flex flex-col gap-5 mb-10">
+                                <Why title="Grassroots-Centered Design" />
+                                <Why title="Startup–Farmer Collaboration" />
+                                <Why title="Climate-Smart & Inclusive"  />
+                                <Why title="Backed by International Partnerships"/>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 w-full"  data-aos="fade-down" data-aos-duration="1500" data-aos-offset="300">
+                    <img src="/img/kera11.svg" class="">
+                </div>
+            </div>
+        </section>
+
+         <!-- start causes -->
+        <section class="causes-section  pb-24 container">
+            <div class=" pb-10">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="text-5xl font-extrabold">
+                            <h2>Implementing Agencies</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:gap-10 owl-carousel">
+                 <div class="causes-card">
+                    <div class="image">
+                        
+                        <img src="assets/images/causes/1.jpg" alt="">
+                    </div>
+                </div>
+                 <div class="causes-card">
+                    <div class="image">
+                        
+                        <img src="assets/images/causes/1.jpg" alt="">
+                    </div>
+                </div>
+                 <div class="causes-card">
+                    <div class="image">
+                        
+                        <img src="assets/images/causes/1.jpg" alt="">
+                    </div>
+                </div>
+                 <div class="causes-card">
+                    <div class="image">
+                        
+                        <img src="assets/images/causes/1.jpg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- end causes -->
+
+
+          <!-- start causes -->
+        <section class="causes-section-s5 mb-24 hidden " id="Get_Involved">
+            <div class="container">
+                <div class="row pb-10">
+                    <div class="col-lg-8 col-12">
+                        <div class="text-5xl font-extrabold">
+                            <h2>Get Involved</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class=" grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
+                    <div class="">
+                        <div class="bg-white shadow-xl rounded-xl flex flex-col items-center justify-center p-4 shadow-slate-100 border border-gray-50">
+                            <div>
+                                <img src="assets/images/causes/11.jpg" class="rounded-xl" alt="">
+                            </div>
+                            <div class="pb-8 pt-4">
+                                 <h2 class="text-2xl font-bold  pb-3"><a>Grassroots-Centered Design</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="">
+                        <div class="bg-white shadow-xl rounded-xl flex flex-col items-center justify-center p-4 shadow-slate-100 border border-gray-50">
+                            <div>
+                                <img src="assets/images/causes/11.jpg" class="rounded-xl" alt="">
+                            </div>
+                            <div class="pb-8 pt-4">
+                                 <h2 class="text-2xl font-bold  pb-3" ><a>For Farmers & FPOs</a></h2>
+                                <div class="md:text-xl text-lg"> Want to improve your productivity or market access?</div>
+                                <div class="flex gap-10 items-center pt-6">
+                                    <div class="text-sm">
+                                       Join KERA Collectives
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="orange" class="size-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="">
+                        <div class="bg-white shadow-xl rounded-xl flex flex-col items-center justify-center p-4 shadow-slate-100 border border-gray-50">
+                            <div>
+                                <img src="assets/images/causes/11.jpg" class="rounded-xl" alt="">
+                            </div>
+                            <div class="pb-8 pt-4">
+                                 <h2 class="text-2xl font-bold  pb-3"><a>For Partners & Institutions</a></h2>
+                                <div class="md:text-xl text-lg"> Interested in collaboration, funding, or research?</div>
+                                <div class="flex gap-10 items-center pt-6">
+                                    <div class="text-sm">
+                                        Partner With Us
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="orange" class="size-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </section>
+        <!-- end causes -->
+
+
+
+        <footer class="wpo-site-footer-s3">
+          
+            <div class="wpo-lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-6 col-12">
+                            <p class="copyright"> &copy; 2025 <a href="https://startupmission.kerala.gov.in/" target="_blank">Kerala Startup Mission</a></p>
+                        </div>
+                        <div class="col col-lg-6 col-12">
+                            <ul class="links">
+                                <li>
+                                    <a href="https://www.facebook.com/keralastartupmission" target="_blank"><i class="flaticon-facebook-app-symbol"></i></a>
+                                </li>
+                               
+                                <li>
+                                    <a href="https://www.linkedin.com/company/kerala-startup-mission/" target="_blank"><i class="flaticon-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://x.com/startup_mission"><i class="flaticon-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape1">
+                <img src="assets/images/f-shape8.png" alt="">
+            </div>
+
+        </footer>
+
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files
+    ================================================== -->
+</Layout>

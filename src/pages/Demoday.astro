@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbarsub.svelte";
+
+import Tracks from "../components/Tracks.astro";
+import Videogallery from "../components/Videogallery.svelte";
+import Startups from "../components/Institutions.svelte";
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+    <Navbarbottom client:load></Navbarbottom>
+
+		<div class="main-content pt-10 pb-24">
+
+            <div class="container pt-24 text-center">
+                <div>
+                    <h2 class="md:text-4xl text-2xl font-bold text-blue-900">Demo Day</h2>
+                    <p class="text-lg font-bold py-2">Showcasing Innovations from Kerala’s Research Institutions</p>
+                    <div class="w-full flex flex-col items-center justify-center">
+                        <p class=" max-w-5xl">Online events where research institutions showcase commercializable products and technologies developed in their labs. Entrepreneurs, startups, and industries can adopt these technologies via tech transfer.</p>
+                    </div>
+                </div>
+                <div class=" pt-14">
+                    <Videogallery client:load></Videogallery>
+                </div>
+
+               <div class="w-full items-center justify-center flex flex-col mt-10">
+                    <div class=" w-fit ">
+                        <a class=" bg-yellow-400 px-4 py-3 text-white text-lg  hover:bg-yellow-500 duration-300" href="https://ksum.in/rinkregistration" target="_blank"> Join the Next Demo Day</a>
+                    </div>
+               </div>
+
+               
+            </div>
+
+	<!-- Services Start -->
+			<div id="rs-services" class="rs-services services-style3  pt-24">
+				<div class="container">
+                    <div class=" w-full flex flex-col items-center justify-center pb-10">
+                        <h2 class="md:text-4xl text-2xl font-bold text-blue-900">Exposure Visit</h2>
+                        <p class="text-lg font-bold py-2">Bringing Entrepreneurs Closer to Research</p>
+                        <div class="w-full flex flex-col items-center justify-center">
+                            <p class=" max-w-5xl">Curated visits for entrepreneurs, startups, and innovators to leading research institutions and scientific facilities in Kerala. </p>
+                        </div>
+                    </div>
+					<div class="grid sm:grid-cols-3 grid-cols-1 h-auto">
+						<div class="flex flex-col item-center justify-center">
+							<div class=" flex flex-col item-center justify-center">
+                                <div class=" flex flex-col item-center justify-center">
+                                    <img src="assets/images/services/style3/ser-icon4.png" class="w-14" alt="Services">
+                                </div>
+                                <div class="services-text">
+                                    <p class=" pt-2 font semibold text-lg"><a>Interact directly with scientists and researchers</a></p>
+                                </div>
+                            </div>
+						</div>
+						<div class="flex flex-col item-center justify-center">
+							<div class=" flex flex-col item-center justify-center">
+                                <div class=" flex flex-col item-center justify-center">
+                                    <img src="assets/images/services/style3/ser-icon2.png" class="w-14" alt="Services">
+                                </div>
+                                <div class="services-text">
+                                    <p class=" pt-2 font semibold text-lg"><a>Explore advanced laboratories and incubation facilities</a></p>
+                                </div>
+                            </div>
+						</div>
+						<div class="flex flex-col item-center justify-center">
+							<div class="flex flex-col item-center justify-center">
+                                <div class=" flex flex-col item-center justify-center">
+                                    <img src="assets/images/services/style3/ser-icon3.png" class="w-14" alt="Services">
+                                </div>
+                                <div class="services-text">
+                                    <p class=" pt-2 font semibold text-lg"><a>Understand the research ecosystem and identify collaboration opportunities</a></p>
+                                </div>
+                            </div>
+						</div>
+						
+					</div>
+				</div>
+                 <section  class="px-5 pt-10"  data-aos="fade-down" data-aos-duration="500" data-aos-offset="100">
+       
+                    <div class="text-center ">
+                        <h3 class="font-bold text-lg md:text-xl lg:text-xl mt-6 mb-4">
+                            Past visited institutions 
+                        </h3>
+                    </div>
+                    <div>
+                        <Startups client:load></Startups>
+                    </div>
+                </section>
+			</div>
+			<!-- Services End -->
+        </div>
+</Layout>

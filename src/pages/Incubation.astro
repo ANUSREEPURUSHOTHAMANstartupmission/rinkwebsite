@@ -1,0 +1,259 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbarsub.svelte";
+import Guideline from "../components/Guideline.astro";
+
+import Tracks from "../components/Tracks.astro";
+import Why from "../components/Why.astro";
+
+import Startups from "../components/Startups.svelte";
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+    <Navbarbottom client:load></Navbarbottom>
+   
+
+    <div class="rs-services services-main-home  pt-120 " >
+        <div class="container">
+            <div class="sec-title text-center">
+                <h2 class="title">
+                    Incubation Programs
+                </h2>
+            </div>
+        </div>
+    </div>
+
+
+   <section class="pb-24 px-5 flex items-center relative main-section astro-2QKIPEZU hidden">
+	  <div class="absolute -z-10 w-full h-full top-0 left-0 bg-black bg-opacity-85 astro-2QKIPEZU"></div>
+	  <div class="absolute -z-20 bg-cover bg-center bg-no-repeat w-full h-full top-0 left-0 astro-2QKIPEZU" style="background-image:url('/delete/bgin.jpg')"></div>  
+	  <div class="container mx-auto text-white space-y-3 md:px-10 astro-2QKIPEZU pt-10">
+		
+		<div class="font-heading text-3xl md:text-4xl font-black astro-2QKIPEZU">
+		    Incubation Programs
+		</div>
+        <p class="max-w-4xl ">
+            Structured incubation programs to support researchers, faculty, and scientists in transforming breakthrough ideas into scalable ventures. These programs offer a guided pathway from research validation to commercialization, backed by funding, expert mentorship, funding, and incubation support.
+        </p>
+	  </div>
+	</section>
+    <section class="flex flex-col py-24 container md:px-10">
+        <div class="grid md:grid-cols-2 gap-10 grid-cols-1 h-auto">
+            <div>
+                <img src="/img/77.jpg" class="rounded-xl">
+            </div>
+            <div>
+                
+                <h2 class="font-bold text-2xl md:text-3xl lg:text-3xl mb-2">
+                    Researchpreneurship
+                </h2>
+                <p class="  pt-2 text-lg font-semibold ">A Virtual Research Idea Validation Programme</p>
+                <p class=" pt-3">
+                    A virtual one-on-one programme designed to help researchers validate their ideas and explore their commercial potential. Through personalized sessions, participants receive expert guidance to validate their innovation and understand the next steps towards entrepreneurship.                
+                </p>
+                <p class="pt-4">This programme also introduces researchers to the support ecosystem of Kerala Startup Mission (KSUM), including funding, incubation, and startup services.</p>
+                <a href="https://ksum.in/rinkregistration" target="_blank" class="bg-blue-900 px-4 py-3 rounded-md text-white mt-6 flex w-fit hover:text-blue-800">Book Your Slots</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mx-auto bg-blue-900 rounded-xl text-white">
+        <div class="md:grid-cols-3 grid-cols-1 grid h-auto gap-4 ">
+            <div class="h-full px-5 py-10">
+                 <div class="font-bold text-2xl md:text-3xl lg:text-3xl mb-6">Who Can Apply?</div>
+                <div class="flex flex-col gap-4 mb-10">
+                    <Guideline title="Research scholars, faculty & Scientists" img="" />
+                    <Guideline title="Individuals from academic or research institution" img="" />
+                    <Guideline title="R&D based startups seeking academic partnerships or technology transfers." img="" />
+                </div>
+                <a href="https://ksum.in/rinkregistration" target="_blank" class="bg-white  px-4 py-3 rounded-md text-blue-950 mt-6 flex w-fit">Book Your Slots</a>
+            </div>
+            <div class="h-full">
+				<div class="bg-cover bg-no-repeat h-full" style="background-image:url('/img/2151908110.jpg')"></div>
+            </div>
+             <div class="h-full px-5 py-10">
+                <div class="font-bold text-2xl md:text-3xl lg:text-3xl mb-6">What You’ll Gain?</div>
+                <div class="flex flex-col gap-4 mb-10">
+                    <Guideline title="Personalized feedback on your research idea." img="" />
+                    <Guideline title="Clarity on commercialization and market fit." img="" />
+                    <Guideline title="Awareness of KSUM support schemes (grants, incubation, IP support, etc.)." img="" />
+                    <Guideline title="Roadmap for your startup journey." img="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pb-24 md:px-5 px-10 hidden">
+		<div class="container mx-auto">
+            <div class="font-bold text-2xl md:text-3xl lg:text-3xl mb-6">Who Can Apply?
+            </div>
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 h-auto">
+
+				<Why content="Research scholars, faculty & Scientists" >
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="montserrat icon icon-tabler w-12 icons-tabler-outline icon-tabler-trophy"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 21l8 0"></path><path d="M12 17l0 4"></path><path d="M7 4l10 0"></path><path d="M17 4v8a5 5 0 0 1 -10 0v-8"></path><path d="M5 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M19 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path></svg>
+				</Why>
+
+				<Why content="Individuals from academic or research institution" >
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="montserrat icon icon-tabler w-12 icons-tabler-outline icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path><path d="M3 6l0 13"></path><path d="M12 6l0 13"></path><path d="M21 6l0 13"></path></svg>
+				</Why>
+
+				<Why content="R&D based startups seeking academic partnerships or technology transfers.">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="montserrat icon icon-tabler w-12 icons-tabler-outline icon-tabler-drone"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 10h4v4h-4z"></path><path d="M10 10l-3.5 -3.5"></path><path d="M9.96 6a3.5 3.5 0 1 0 -3.96 3.96"></path><path d="M14 10l3.5 -3.5"></path><path d="M18 9.96a3.5 3.5 0 1 0 -3.96 -3.96"></path><path d="M14 14l3.5 3.5"></path><path d="M14.04 18a3.5 3.5 0 1 0 3.96 -3.96"></path><path d="M10 14l-3.5 3.5"></path><path d="M6 14.04a3.5 3.5 0 1 0 3.96 3.96"></path></svg>
+				</Why>
+			</div>
+		</div>
+	</section>
+
+    
+
+     <section  class=" px-5 hidden"  data-aos="fade-down" data-aos-duration="500" data-aos-offset="100">
+		<div class="relative container mx-auto">
+			<div class="grid lg:grid-cols-2 gap-10 h-auto">
+				<div>
+					<div class="font-bold text-2xl md:text-3xl lg:text-3xl mb-6">What You’ll Gain?
+                    </div>
+					<div class="flex flex-col gap-4 mb-10">
+						<Guideline title="Personalized feedback on your research idea." img="" />
+						<Guideline title="Clarity on commercialization and market fit." img="" />
+						<Guideline title="Awareness of KSUM support schemes (grants, incubation, IP support, etc.)." img="" />
+						<Guideline title="Roadmap for your startup journey." img="" />
+					</div>
+
+				</div>
+
+				<div class="rounded-2xl bg-center bg-no-repeat w-full mb-4" style="background-image:url('/delete/bgin.jpg')"></div>
+				
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+     <section  class=" pt-24 px-5"  data-aos="fade-down" data-aos-duration="500" data-aos-offset="100">
+		<div class="relative container mx-auto">
+			<div class="grid lg:grid-cols-2 gap-10 h-auto">
+			
+
+	            <div>
+                    <img src="/img/12.jpeg" class="rounded-2xl">
+                </div>
+                <div>
+                    <h2 class="font-bold text-2xl md:text-3xl lg:text-3xl mb-6">Research Incubation Programme </h2>
+                    <div>
+                        <p>
+                            The Research Incubation Programme is an ambitious initiative launched by Mahatma Gandhi University, funded by the Kerala Startup Mission, to revolutionize Kerala's higher education and innovation landscape.
+                        </p>
+                        <p class="pt-3">
+                            The programme is designed to promote entrepreneurship among researchers and support the conversion of innovative research outcomes into commercial products, technologies, or services. Selected applicants will receive a startup grant support,  mentorship, incubation, and business development support.
+                        </p>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    
+    <section  class=" pt-24 px-5"  data-aos="fade-down" data-aos-duration="500" data-aos-offset="100">
+		<div class="relative container mx-auto">
+			<div class="grid lg:grid-cols-2 gap-10 h-auto">
+				<div>
+					<h2 class="font-bold text-2xl md:text-3xl lg:text-3xl mb-6">Research Innovation Programme for Women Startups
+                    </h2>
+					<div>
+                        <p>
+                            The Research Innovation Programme for Women Startups is a flagship initiative under our Research Incubation Programme, aimed at fostering research driven entrepreneurship among women innovators. This programme is designed to support women-led startups that are solving real world problems through cutting edge research and technology.
+                        </p>
+                    </div>
+
+				</div>
+
+				<div>
+                    <img src="/img/image62.png" class="rounded-2xl">
+                </div>
+				
+			</div>
+		</div>
+	</section>
+
+
+    <!-- Counter Start -->
+    <div class="rs-counter counter-style2 bg-[#071478] pt-110 pb-120 md-pt-70 md-pb-80 my-24">
+        <div class="container">
+            <div class=" font-bold text-2xl md:text-3xl lg:text-3xl mb-6 text-white">
+                <p>IMPACT METRICS</p>
+            </div>
+            <div class="row y-middle items-center justify-center">
+                <div class="row items-center justify-center">
+                    <div class="col-lg-4 col-md-6 col-sm-6 md-mb-30">
+                        <div class="rs-counter-list"> 
+                            <div class="counter-icon">
+                                <img src="assets/images/counter/icons/count1.png" alt="Images">
+                            </div>
+                            <div class="counter-text">
+                                <div class="counter-number">
+                                    <span class="rs-count">30</span>
+                                    <span class="prefix">+</span>	
+                                </div>
+                                <span class="title">Research Ideas Onboarded</span>	
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 md-mb-30">
+                        <div class="rs-counter-list"> 
+                            <div class="counter-icon">
+                                <img src="assets/images/counter/icons/count2.png" alt="Images">
+                            </div>
+                            <div class="counter-text">
+                                <div class="counter-number">
+                                    <span class="rs-count">15</span>
+                                    <span class="prefix">+</span>	
+                                </div>
+                                <span class="title">Patents Filing Supported</span>	
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 xs-mb-30">
+                        <div class="rs-counter-list"> 
+                            <div class="counter-icon">
+                                <img src="assets/images/counter/icons/count3.png" alt="Images">
+                            </div>
+                            <div class="counter-text">
+                                <div class="counter-number">
+                                    <span class="rs-count">10</span>
+                                    <span class="prefix">+</span>	
+                                </div>
+                                <span class="title">Startups Created</span>	
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter End -->
+
+        
+    <section  class="px-5 pb-24"  data-aos="fade-down" data-aos-duration="500" data-aos-offset="100">
+       
+        <div class="text-center mb-55 md-mb-35">
+            <h3 class="font-bold text-2xl md:text-3xl lg:text-3xl mb-6">
+                Startups created from<br> Research Innovation Incubation Program
+            </h3>
+        </div>
+        <div>
+            <Startups client:load></Startups>
+        </div>
+	</section>
+
+
+
+</Layout>

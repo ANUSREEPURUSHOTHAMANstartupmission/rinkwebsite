@@ -1,0 +1,59 @@
+[
+    
+    {
+       "id":1,
+       "img":"/img/ctcri.png",
+       "label":"Central Tuber Crops Research Institute (CTCRI)"
+    },
+    {
+       "id":1,
+       "img":"/img/niist.png",
+       "label":"National Institute for Interdisciplinary Science and Technology (NIIST)"
+    },
+     {
+       "id":1,
+       "img":"/img/cmet.png",
+       "label":"Centre for Materials for Electronics Technology (CMET)"
+    },
+     {
+       "id":1,
+       "img":"/img/sbi.png",
+       "label":"ICAR - Sugarcane Breeding Institute Research Centre (SBI-RC)"
+    },
+     {
+       "id":1,
+       "img":"/img/cipet.png",
+       "label":"CIPET - Institute of Petrochemicals Technology (IPT)"
+    },
+     {
+       "id":1,
+       "img":"/img/cift.png",
+       "label":"ICAR – Central Institute of Fisheries Technology (ICAR-CIFT)"
+    },
+     {
+       "id":1,
+       "img":"/img/iav.png",
+       "label":"Institute Of  Advanced Virology (IAV)"
+    },
+     {
+       "id":1,
+       "img":"/img/cpcri.png",
+       "label":"ICAR-Central Plantation Crops Research Institute (CPCRI)"
+    },
+     {
+       "id":1,
+       "img":"/img/clif.png",
+       "label":"Central Laboratory for Instrumentation Facility (CLIF), University of Kerala"
+    },
+     {
+       "id":1,
+       "img":"/img/CWRDM.png",
+       "label":"KSCSTE - Centre for Water Resources Development and Management (CWRDM)"
+    }, 
+    {
+       "id":1,
+       "img":"/img/MBGIPS.png",
+       "label":"KSCSTE - Malabar Botanical Garden & Institute for Plant Sciences (MBGIPS)"
+    }
+    
+]

@@ -1,0 +1,82 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbarsub.svelte";
+
+import Tracks from "../components/Tracks.astro";
+import Videogallery from "../components/Videogallery.svelte";
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+    <Navbarbottom client:load></Navbarbottom>
+
+	  <section id="guidelines" class=" pt-36 px-5"  data-aos="fade-down" data-aos-duration="500" data-aos-offset="100">
+		<div class="relative container mx-auto">
+			<div class="grid lg:grid-cols-2 gap-10 h-auto">
+			
+
+	            <div>
+                    <img src="/img/grant.png" class="rounded-2xl border">
+                </div>
+                <div>
+                    <div class="font-bold text-2xl md:text-3xl lg:text-3xl mb-6">Research & Development Grant</div>
+                    <div>
+                        <p>
+                            Designed to support startups in developing innovative products, technologies, or solutions through research and development.                         
+                        </p>
+                        <p class="pt-3">
+                            This grant supports hardware startups with a strong R&D focus, encouraging innovation and product development. To be eligible, startups must have a working prototype and be associated with an approved incubator in the state. The grant prioritizes startups that have secured patents or are in the process of scaling their products. Funding must be directed primarily toward hardware development, with limited allocation for marketing and no provision for manpower expenses.                        
+                        </p>
+                    </div>
+                <a href="https://startupmission.kerala.gov.in/schemes/rd-grant" target="_blank" class="bg-blue-900 px-4 py-3 rounded-md text-white mt-6 flex w-fit">Know More</a>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+    
+    <section id="guidelines" class=" py-24 px-5"  data-aos="fade-down" data-aos-duration="500" data-aos-offset="100">
+		<div class="relative container mx-auto">
+			<div class="grid lg:grid-cols-2 gap-10 h-auto">
+				<div>
+					<div class="font-bold text-2xl md:text-3xl lg:text-3xl mb-6">IP QUERY</div>
+					<div>
+                        <p>
+                            One-on-One Interaction with IP Experts tailored for R&D startups and aspiring research-preneurs. These sessions are designed to help innovators understand how to protect, manage, and commercialize their intellectual property, an essential step in their startup journey.
+                        </p>
+                        <p class="text-lg font-semibold pt-3 pb-2">
+                            Who Can Apply?
+                        </p>
+                        <div class="features-content red-feature">
+                            <ul class="rs-features-list">
+                                <li>
+                                    <i class="fa fa-check p-2"></i>
+                                    <span class=" text-black">R&D-based startups with innovative technologies</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check p-2"></i>
+                                    <span class="">Researchers and scholars planning to launch startups</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check p-2"></i>
+                                    <span class="">Innovators seeking patent, copyright, or trademark guidance</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://forms.gle/LkgvgzVRTj6WhQPu9" target="_blank" class="bg-blue-900 px-4 py-3 rounded-md text-white mt-6 flex w-fit">Book Your Slot </a>
+
+                    </div>
+
+				</div>
+
+				<div>
+                    <img src="/delete/ip.jpg" class="rounded-2xl">
+                </div>
+				
+			</div>
+		</div>
+	</section>
+</Layout>
