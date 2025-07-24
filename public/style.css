@@ -1409,7 +1409,7 @@ blockquote p {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
-  background-color: #a8a8a6;
+  background-color: #ffffff;
 }
 .services-btn .btn-text:hover {
   background-color: #010D14;
@@ -8838,7 +8838,6 @@ body .search-modal .close:hover {
 }
 .rs-services.services-main-home .services-item .services-wrap .services-content .service-inner .services-txt {
   color: #CECCCC;
-  margin-bottom: 30px;
 }
 .rs-services.services-main-home .services-item .services-wrap .normarl-text-area {
   display: flex;
