@@ -7,7 +7,7 @@
   });
 </script>
 
-<div class="grid md:grid-cols-7 sm:grid-cols-3 grid-cols-2 gap-10 h-auto">
+<div class="grid md:grid-cols-7 sm:grid-cols-3 grid-cols-3 gap-10 h-auto">
     {#each images as img}
         <div >
             <div>
