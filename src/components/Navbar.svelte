@@ -79,11 +79,11 @@
      <main class=" flex  items-start px-7 my-auto">
         <div style="font-family: Museo-Sans, sans-serif;" class="flex my-auto  {scrolled?'':''}">
             <a href="/"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Home</a>
-            <a target="_blank" href="/#about"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">About</a>
-            <a target="_blank" href="/#Objectives"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Objectives</a>
+            <a href="/#about"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">About</a>
+            <a href="/#Objectives"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Objectives</a>
             
-            <a target="_blank" href="/#Programs" class="md:flex hidden cursor-pointer  px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Programs</a>
-            <a target="_blank" href="/Gallery"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">Gallery</a>
+            <a href="/#Programs" class="md:flex hidden cursor-pointer  px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Programs</a>
+            <a href="/Gallery"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">Gallery</a>
            
         </div>
       
@@ -127,16 +127,16 @@
                         <a href="/"  class="cursor-pointer  font-bold hover: uppercase ">Home</a>
                     </li>
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a target="_blank" href="/#about"  class="cursor-pointer  uppercase ">About</a>
+                      <a href="/#about"  class="cursor-pointer  uppercase ">About</a>
                     </li>
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a target="_blank" href="/#Objectives"  class="cursor-pointer  font-bold hover: uppercase ">Objectives</a>
+                      <a href="/#Objectives"  class="cursor-pointer  font-bold hover: uppercase ">Objectives</a>
                     </li> 
                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a target="_blank" href="/#Programs"  class="cursor-pointer  font-bold hover: uppercase ">Programs</a>
+                      <a href="/#Programs"  class="cursor-pointer  font-bold hover: uppercase ">Programs</a>
                     </li>
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a target="_blank" href="/Gallery"  class="cursor-pointer  font-bold hover: uppercase ">Gallery</a>
+                      <a href="/Gallery"  class="cursor-pointer  font-bold hover: uppercase ">Gallery</a>
                     </li>
   
                     
