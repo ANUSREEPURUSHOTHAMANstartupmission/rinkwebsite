@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbarsub.svelte";
+
+import Tracks from "../components/Tracks.astro";
+import Videogallery from "../components/Videogallery.svelte";
+import Booklet from "../components/Booklet.astro";
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+
+    <Navbarbottom client:load></Navbarbottom>
+            <div class="container pt-24 text-center min-h-screen">
+                <div>
+                    <h2 class="md:text-4xl text-2xl font-bold text-blue-900">Technology Booklet</h2>
+                    <div class="w-full flex flex-col items-center justify-center pt-4">
+                        <p class=" max-w-5xl">
+                            Discover a curated list of technologies developed across Kerala’s premier research institutions.  Whether you are looking for a market ready product, a scalable prototype, or a novel scientific solution, these technologies are available for licensing, co-development, or commercialization.  
+                        </p>
+                    </div>
+                </div>
+                <div class=" pt-10">
+                    <Booklet client:load></Booklet>
+                </div>
+
+            </div>
+
+</Layout>

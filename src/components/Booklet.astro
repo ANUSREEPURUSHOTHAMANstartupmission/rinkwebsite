@@ -1,0 +1,98 @@
+---
+
+let books =
+
+[
+  {"id":"book1","link":"./booklet_pdf/National Coir Research Institute.pdf","img":"./booklet_pdf/1.png","title":"National Coir Research Institute"},
+  {"id":"book2","link":"./booklet_pdf/Technology_With_A_Brand.pdf","img":"./booklet_pdf/2.png","title":"Technology_With_A_Brand"},
+  {"id":"book3","link":"./booklet_pdf/National Coir Research Institute.pdf","img":"./booklet_pdf/1.png","title":"National Coir Research Institute"},
+]
+---
+
+
+   
+
+
+ <div class=" container">
+
+    {books.map((item) => (
+      <div id={item.id}></div>
+     
+    ))}
+</div>
+
+
+<div  class=" mx-auto items-center  justify-center text-center flex  ">
+    <div class=" mx-auto grid grid-cols-3   gap-2 z-30 h-auto">
+        {books.map((item) => (
+        <div class=" overflow-hidden  p-4 group relative">
+            <img data-pdf={item.link} data-id={item.id} src={item.img} class="cursor-pointer duration-500 group-hover:scale-105">
+             <div class=" absolute inset-0 flex items-center justify-center" data-pdf={item.link} data-id={item.id} src={item.img}>
+                    <a data-pdf={item.link} data-id={item.id} src={item.img} class=" bg-blue-950 rounded-full p-6 w-10 h-10 flex flex-col items-center justify-center popup-videos">
+                      
+                        <i class="fa fa-play text-white text-xl" data-pdf={item.link} data-id={item.id} src={item.img}></i>
+                    </a>
+                </div>
+            {/* <p data-pdf={item.link} data-id={item.id} class=" md:text-lg cursor-pointer text-blue-950 text-base pt-2 underline ">{item.title}</p> */}
+        </div>
+        ))}
+    </div>
+</div>
+
+
+<link rel="stylesheet" href="/flipbook/css/compressed.css" type="text/css">
+<link rel="stylesheet" href="./flipbook/css/main.css" type="text/css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" is:inline></script>
+<script src="/flipbook/js/compressed.js" is:inline></script>
+<script src="/flipbook/js/pdf.combined.min.js" is:inline></script>
+<script src="/flipbook/js/flipbook.min.js" is:inline></script>
+
+
+  <script type="text/javascript" src="./flipbook/js/compressed.js" is:inline></script>
+  <script type="text/javascript" src="./flipbook/js/pdf.combined.min.js" is:inline></script>
+  <script type="text/javascript" src="./flipbook/js/flipbook.min.js" is:inline></script>
+
+  <script is:inline>
+  $(document).ready(function () {
+    function fullscreenErrorHandler() {
+      if (self != top) return "The frame is blocking full screen mode. Click on 'remove frame' button above and try again.";
+    }
+
+    function buildBook(e) {
+      var item = e.target;
+      var link = item.getAttribute('data-pdf');
+      var id = item.getAttribute('data-id');
+
+      var optionsBook = {
+        height: 1024,
+        width: 1450,
+        pageNumbers: false,
+        pdf: link,
+        pdfFind: true,
+        pdfTextSelectable: true,
+        lightbox: "#" + id + "-trigger",
+        lightboxClass: "lightbox-pdf",
+        centeredWhenClosed: true,
+        hardcovers: true,
+        curl: true,
+        curlSize: 200,
+        toolbar: "lastLeft, left, currentPage, right, lastRight, toc, find, zoomin, zoomout, download, flipsound, thumbnails",
+        thumbnailsPosition: "bottom",
+        responsiveHandleWidth: 150,
+        onFullscreenError: fullscreenErrorHandler
+      };
+
+      var q = '#' + id, e = $.wowBook(q);
+      if (!e) {
+        $(q).wowBook(optionsBook);
+        e = $.wowBook(q);
+      }
+      e.showLightbox();
+    }
+
+    // Attach click events to all [data-pdf] items
+    var books = [].slice.call(document.querySelectorAll('[data-pdf]'));
+    books.forEach(book => book.addEventListener('click', buildBook));
+  });
+</script>
