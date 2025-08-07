@@ -2,22 +2,26 @@
 
 let books1 =
 [
-  {"id":"book1","link":"./booklet_pdf/National Coir Research Institute.pdf","img":"./booklet_pdf/1.png","title":"National Coir Research Institute"},
-  {"id":"book2","link":"./booklet_pdf/Technology_With_A_Brand.pdf","img":"./booklet_pdf/2.png","title":"Technology_With_A_Brand"},
-  {"id":"book3","link":"./booklet_pdf/CTCRI Brochure.pdf","img":"./booklet_pdf/4.png","title":"CTCRI Brochure"},
+  {"id":"book1","link":"./booklet_pdf/National Coir Research Institute.pdf","img":"./booklet_pdf/1.png","title":"National Coir Research & Management Institute (NCRMI)"},
+  {"id":"book3","link":"./booklet_pdf/CTCRI Brochure.pdf","img":"./booklet_pdf/4.png","title":"ICAR - Central Tuber Crops Research Institute (CTCRI)"},
+  {"id":"book4","link":"./booklet_pdf/CPCRI Brochure.pdf","img":"./booklet_pdf/5.png","title":"ICAR - Central Plantation Crops Research Institute (CPCRI)"}
 
 ]
 let books2 =
 [
-  {"id":"book4","link":"./booklet_pdf/CPCRI Brochure.pdf","img":"./booklet_pdf/5.png","title":"CPCRI Brochure"},
-  {"id":"book5","link":"./booklet_pdf/NIIST Brochure.pdf","img":"./booklet_pdf/6.png","title":"NIIST Brochure"},
-  {"id":"book6","link":"./booklet_pdf/Technology_booklet1.pdf","img":"./booklet_pdf/3.png","title":"Technology Booklet"},
+  {"id":"book5","link":"./booklet_pdf/NIIST Brochure.pdf","img":"./booklet_pdf/6.png","title":"CSIR - National Institute For Interdisciplinary Science and Technology (NIIST)"},
+  {"id":"book6","link":"./booklet_pdf/Technology_booklet1.pdf","img":"./booklet_pdf/3.png","title":"RINK Technology Booklet"}
 
+]
+
+let food =
+[
+  {"id":"book7","link":"./img/RINK Food_Technology.pdf","img":"./img/huddel.png","title":"CSIR - National Institute For Interdisciplinary Science and Technology (NIIST)"}
 ]
 ---
 
-
-   
+    <!-- {"id":"book2","link":"./booklet_pdf/Technology_With_A_Brand.pdf","img":"./booklet_pdf/2.png","title":"Technology_With_A_Brand"}, -->
+ 
 
 
  <div class=" container">
@@ -31,25 +35,31 @@ let books2 =
       <div id={item.id}></div>
      
     ))}
+
+    {food.map((item) => (
+      <div id={item.id}></div>
+     
+    ))}
 </div>
 
 
 <div  class=" mx-auto items-center  justify-center text-center flex flex-col  pb-24 ">
-    <div class=" mx-auto grid grid-cols-3   gap-2 z-30 h-auto">
+    <div class=" mx-auto grid md:grid-cols-3 grid-cols-1  gap-2 z-30 h-auto">
         {books1.map((item) => (
         <div class=" overflow-hidden  p-4 group relative">
             <img data-pdf={item.link} data-id={item.id} src={item.img} class="cursor-pointer duration-500 group-hover:scale-105">
              <div class=" absolute inset-0 flex items-center justify-center" data-pdf={item.link} data-id={item.id} src={item.img}>
                     <a data-pdf={item.link} data-id={item.id} src={item.img} class=" bg-blue-950 rounded-full p-6 w-10 h-10 flex flex-col items-center justify-center popup-videos">
-                      
+                        
                         <i class="fa fa-play text-white text-xl" data-pdf={item.link} data-id={item.id} src={item.img}></i>
                     </a>
-                </div>
+              </div>
+              <p class="pt-4">{item.title}</p>
         </div>
         ))}
     </div>
 
-    <div class=" mx-auto grid grid-cols-3   gap-2 z-30 h-auto">
+    <div class=" mx-auto grid  md:grid-cols-3 grid-cols-1  gap-2 z-30 h-auto">
         {books2.map((item) => (
         <div class=" overflow-hidden  p-4 group relative">
             <img data-pdf={item.link} data-id={item.id} src={item.img} class="cursor-pointer duration-500 group-hover:scale-105">
@@ -59,8 +69,43 @@ let books2 =
                     <i class="fa fa-play text-white text-xl" data-pdf={item.link} data-id={item.id} src={item.img}></i>
                 </a>
             </div>
+            <p class="pt-4">{item.title}</p>
         </div>
         ))}
+    </div>
+
+
+    <div class="pt-10 container">
+        <div class="grid md:grid-cols-2 grid-cols-1  h-auto">
+            <div class="flex w-full md:items-end md:justify-end items-center justify-center">
+               <div class="md:w-3/4 w-full flex items-center justify-center">
+                 {food.map((item) => (
+                  <div class=" overflow-hidden  p-4 group relative">
+                      <img data-pdf={item.link} data-id={item.id} src={item.img} class="cursor-pointer flex duration-500 group-hover:scale-105 items-center justify-center rounded-xl">
+                      <div class=" absolute inset-0 flex items-center justify-center" data-pdf={item.link} data-id={item.id} src={item.img}>
+                          <a data-pdf={item.link} data-id={item.id} src={item.img} class=" bg-blue-950 rounded-full p-6 w-10 h-10 flex flex-col items-center justify-center popup-videos">
+                              <i class="fa fa-play text-white text-xl" data-pdf={item.link} data-id={item.id} src={item.img}></i>
+                          </a>
+                      </div>
+                  </div>
+                ))}
+               </div>
+            </div>
+            <div>
+                <div class=" md:w-3/4 w-full flex flex-col ">
+                  <div class="pt-10" >
+                    <h2 class="md:text-3xl text-2xl font-bold text-blue-900 text-start pb-6">Food Technologies with a Brand Design</h2>
+                  </div>
+
+                  <div class="text-justify">
+                    <p>Kerala Startup Mission, through its 'Branding Challenge,' created Brand Designs 
+                        for selected Food Technologies developed by R&D institutions in India.
+                        Explore the Food Technologies with a Brand Design
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

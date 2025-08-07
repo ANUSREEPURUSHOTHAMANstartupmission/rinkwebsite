@@ -78,12 +78,12 @@
   
      <main class=" flex  items-start px-7 my-auto">
         <div style="font-family: Museo-Sans, sans-serif;" class="flex my-auto  {scrolled?'':''}">
-            <a href="/"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Home</a>
-            <a href="/#about"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">About</a>
-            <a href="/#Objectives"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Objectives</a>
+             <a href="/"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Home</a>
+            <!-- <a href="/#about"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">About</a> -->
+            <a href="/#What_we_do"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">What we do</a>
             
-            <a href="/#Programs" class="md:flex hidden cursor-pointer  px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Programs</a>
-            <!-- <a href="/leap-membership"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">Partners</a> -->
+            <a href="https://rinkevents.startupmission.in/demo-day" target="_blank" class="md:flex hidden cursor-pointer  px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Events</a>
+            <a href="#contact"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">contact us</a>
             <a href="/Gallery"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">Gallery</a>
            
         </div>
@@ -127,19 +127,19 @@
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
                         <a href="/"  class="cursor-pointer  font-bold hover: uppercase ">Home</a>
                     </li>
+                   
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#about"  class="cursor-pointer  uppercase ">About</a>
-                    </li>
-                    <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#Objectives"  class="cursor-pointer  font-bold hover: uppercase ">Objectives</a>
+                      <a href="/#What_we_do"  class="cursor-pointer  font-bold hover: uppercase ">What we do</a>
                     </li> 
                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#Programs"  class="cursor-pointer  font-bold hover: uppercase ">Programs</a>
+                      <a href="https://rinkevents.startupmission.in/demo-day" target="_blank"  class="cursor-pointer  font-bold hover: uppercase ">Events</a>
+                    </li>
+                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
+                      <a href="/#contact"  class="cursor-pointer  uppercase ">Contact US</a>
                     </li>
                       <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
                       <a href="/Gallery"  class="cursor-pointer  font-bold hover: uppercase ">Gallery</a>
                     </li>
-  
                     
             </ul>
         </nav>

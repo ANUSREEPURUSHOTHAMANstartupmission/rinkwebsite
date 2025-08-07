@@ -25,7 +25,7 @@
 <div class="md:grid-cols-6 sm:grid-cols-2 grid-cols-1 grid gap-4 h-auto">
     {#each programs as program}
         <div class="">
-            <div class=" bg-white">
+            <div class=" bg-white border">
                 <img src="{program.img}" class="p-2 border"> 
             </div>
 

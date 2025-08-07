@@ -26,5 +26,10 @@
        "id":2,
        "img":"/img/YGENR",
        "label":"YGENR Tech Solutions Pvt. Ltd"
+    },
+    {
+      "id":3,
+      "img":"/img/Group 189.png",
+      "label":"Shelt Innovation Pvt. Ltd."
     }
 ]
