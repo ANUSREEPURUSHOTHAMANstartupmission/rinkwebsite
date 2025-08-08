@@ -80,9 +80,9 @@
         <div style="font-family: Museo-Sans, sans-serif;" class="flex my-auto  {scrolled?'':''}">
             <a href="/"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Home</a>
             <!-- <a href="/#about"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">About</a> -->
-            <a href="/#What_we_do"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">What we do</a>
+            <a href="/#What_we_do"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900 page-scroll">What we do</a>
             
-            <a href="https://rinkevents.startupmission.in/demo-day" target="_blank" class="md:flex hidden cursor-pointer  px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Events</a>
+            <a href="https://rinkevents.startupmission.in/" target="_blank" class="md:flex hidden cursor-pointer  px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Events</a>
             <a href="#contact"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">contact us</a>
             <a href="/Gallery"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">Gallery</a>
            
@@ -129,10 +129,10 @@
                     </li>
                    
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#What_we_do"  class="cursor-pointer  font-bold hover: uppercase ">What we do</a>
+                      <a href="/#What_we_do"  class="cursor-pointer  font-bold hover: uppercase page-scroll ">What we do</a>
                     </li> 
                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="https://rinkevents.startupmission.in/demo-day" target="_blank"  class="cursor-pointer  font-bold hover: uppercase ">Events</a>
+                      <a href="https://rinkevents.startupmission.in/" target="_blank"  class="cursor-pointer  font-bold hover: uppercase ">Events</a>
                     </li>
                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
                       <a href="/#contact"  class="cursor-pointer  uppercase ">Contact US</a>

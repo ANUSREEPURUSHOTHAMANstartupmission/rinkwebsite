@@ -68,6 +68,21 @@ const url = "https://startupmission.kerala.gov.in/";
   font-style: normal;
 }
 </style>
+
+<script is:inline>
+	document.querySelectorAll("a.page-scroll").forEach((anchor) => {
+		anchor.addEventListener("click", function (e) {
+			e.preventDefault();
+			const targetId = e.target?.getAttribute("href").replace("/#", "");
+			const targetElement = document.getElementById(targetId);
+			if (targetElement) {
+				targetElement.scrollIntoView({
+					behavior: "smooth",
+				});
+			}
+		});
+	});
+</script>
 </head>
 	<body class="home-blue-color">
 
@@ -79,14 +94,14 @@ const url = "https://startupmission.kerala.gov.in/";
 				<div class="flex flex-row  gap-4 justify-between w-full">
 					<div class="">
 						<div class="">
-							<img src="/img/rink.svg" alt="image" class=" md:w-52 w-40">
+							<img src="/img/ksumrink.svg" alt="image" class=" md:w-56 w-40">
 						</div>
 					</div>
-					<div class="">
+					<!-- <div class="">
 						<div class=" flex items-end justify-end md:pr-10">
 							<img src="/img/logo.svg" alt="image" class="w-32">
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="grid md:grid-cols-3 grid-cols-1 gap-10 h-auto pt-4">
@@ -96,7 +111,7 @@ const url = "https://startupmission.kerala.gov.in/";
 					</p>
 				</div>
 				<div>
-					<div class=" flex items-center justify-center">
+					<div class="items-center justify-center hidden">
 						<div class=" flex flex-row gap-10">
 							<ul class=" space-y-2  font-light uppercase ">
 								<li>
