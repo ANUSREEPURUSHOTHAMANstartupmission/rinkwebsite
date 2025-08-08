@@ -129,13 +129,13 @@
                     </li>
                    
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#What_we_do"  class="cursor-pointer  font-bold hover: uppercase page-scroll ">What we do</a>
+                      <a href="#What_we_do"  class="cursor-pointer  font-bold hover: uppercase page-scroll ">What we do</a>
                     </li> 
                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
                       <a href="https://rinkevents.startupmission.in/" target="_blank"  class="cursor-pointer  font-bold hover: uppercase ">Events</a>
                     </li>
                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#contact"  class="cursor-pointer  uppercase ">Contact US</a>
+                      <a href="#contact"  class="cursor-pointer  uppercase ">Contact US</a>
                     </li>
                       <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
                       <a href="/Gallery"  class="cursor-pointer  font-bold hover: uppercase ">Gallery</a>
