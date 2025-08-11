@@ -3,6 +3,7 @@ const { title } = Astro.props;
 
 import Navbar from "../components/Navbar.astro";
 import Navbarbottom from "../components/Navbar.svelte";
+import Footer from "../components/Footer.astro";
 
 
 const description = "Kerala Startup Mission is the central agency of the Government of Kerala for entrepreneurship development and incubation activities in Kerala, India.";
@@ -75,91 +76,8 @@ const url = "https://startupmission.kerala.gov.in/";
 
 		<slot />
 
-
-		<div class="container pb-6" id="contact">
-			<div>
-				<div class="flex flex-row  gap-4 justify-between w-full">
-					<div class="">
-						<div class="">
-							<img src="/img/ksumrink.svg" alt="image" class=" md:w-56 w-40">
-						</div>
-					</div>
-					<!-- <div class="">
-						<div class=" flex items-end justify-end md:pr-10">
-							<img src="/img/logo.svg" alt="image" class="w-32">
-						</div>
-					</div> -->
-				</div>
-			</div>
-			<div class="grid md:grid-cols-3 grid-cols-1 gap-10 h-auto pt-4">
-				<div class="">
-					<p class="text-sm  max-w-80">
-						Research Innovation Network-Kerala (RINK) aims to translate the research products into commercial ventures by connecting Research Institutions with Startups and Corporates.
-					</p>
-				</div>
-				<div>
-					<div class="items-center justify-center hidden">
-						<div class=" flex flex-row gap-10">
-							<ul class=" space-y-2  font-light uppercase ">
-								<li>
-									<a href="/">HOME</a>
-								</li>
-								<li>
-									<a href="/#about" >About</a>
-								</li>
-								<li>
-									<a href="/#Objectives">Objectives</a>
-								</li>
-								
-							</ul>
-							<ul class=" space-y-2  font-light uppercase">
-							
-								<li>
-									<a href="/#Programs">Programs</a>
-								</li>
-								<li>
-									<a href="/Gallery">Gallery</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class=" md:items-end md:justify-end flex flex-col items-center justify-center">
-					<div class="">
-                        <p class=" font-semibold">For more details</p>
-                        <p class="text-black">rink@startupmission.in</p>
-                        <p>08047180470<br>0471-2700270</p>
-						<p></p>
-						<p></p>
-						<p></p>
-
-                   </div>
-				</div>
-			</div>
-		</div>
-		 <footer id="rs-footer" class="rs-footer bg-white footer-main-home">
-			<div class="footer-bottom">
-                <div class="container">                    
-                    <div class="row y-middle">
-                        <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
-                            <ul class="copy-right-menu">
-                               <ul class="footer-social md-mb-30">  
-								<li><a href="https://www.linkedin.com/company/research-innovation-network-kerala" target="_blank"><i class="fa fa-linkedin"></i></a></li>                     
-                                <li><a href="https://www.facebook.com/keralastartupmission" target="_blank"><i class="fa fa-facebook"></i></a></li>                     
-                                <li><a href="https://x.com/startup_mission" target="_blank"><i class="fa fa-twitter"></i></a></li>                     
-                          	</ul>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="copyright text-lg-start text-center">
-                                <p>© 2025 <a href="https://startupmission.kerala.gov.in/" target="blank">Kerala Startup Mission </a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-		</footer>
-
+	<Footer></Footer>
+	
 		<script src="/assets/js/modernizr-2.8.3.min.js" is:inline></script>
 		<!-- jquery latest version -->
 		<script src="/assets/js/jquery.min.js" is:inline></script>
