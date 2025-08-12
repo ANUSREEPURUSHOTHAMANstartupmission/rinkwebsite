@@ -22,7 +22,7 @@
 
 <div class="">
   
-<div class="md:grid-cols-6 sm:grid-cols-2 grid-cols-1 grid gap-4 h-auto">
+<div class="md:grid-cols-4 lg:grid-cols-6 sm:grid-cols-2 grid-cols-2 grid gap-4 h-auto">
     {#each programs as program}
         <div class="">
             <div class=" bg-white border">
