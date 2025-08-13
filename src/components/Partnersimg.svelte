@@ -1,6 +1,6 @@
 <script>
   // Number of images in your gallery
-  const totalImages = 21; // change as needed
+  const totalImages = 23; // change as needed
   const images = Array.from({ length: totalImages }, (_, i) => {
     const num = String(i + 1).padStart(3, '0'); // 001, 002, ...
     return `/img/logo/logo-${num}.jpg`; // adjust path as needed
